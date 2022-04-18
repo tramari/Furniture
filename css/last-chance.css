@@ -1,0 +1,344 @@
+/*стилизация блока "Последний шанс"*/
+
+.last-wrapper {
+    background-color: #FAECE9;
+    position: relative;
+    min-height: 545px;
+    max-width: 57%;
+}
+
+.last-title {
+    position: absolute;
+    left: 153px;
+    top: 73px;
+}
+
+.last h2 {
+    font-family: "Playfair Display", "Georgia", serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: #303032;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.last h2::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 90px;
+    height: 4px;
+    background-color: #303032;
+}
+
+.last-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 275px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 164px;
+    left: 153px;
+}
+
+.last-menu__items {
+    width: 33.3%;
+}
+
+.last-menu__items a {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303032;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+}
+
+.last-menu__items a:active {
+    text-decoration-line: underline;
+}
+
+.last-menu__items a:focus {
+    opacity: 0.8;
+    opacity: 0.6;
+}
+
+.last-menu__items a:focus a:hover {
+    opacity: 0.8;
+}
+
+.last-menu__items:nth-child(3n) {
+    text-align: right;
+}
+
+.last-slider__image img {
+    height: 252px;
+    margin: 0;
+    padding: 0;
+}
+
+.last-slider__image {
+    text-align: end;
+}
+
+.last-slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 145px;
+    margin-right: 127px;
+    padding: 0;
+}
+
+.last-slider__item-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 30px 15px 3px 23px;
+}
+
+.last-slider__item {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(56, 54, 53, 0.2);
+    box-sizing:border-box;
+    width: 209px;
+    margin-right: 30px;
+    height: 355px;
+}
+
+.last-slider__wrap {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(56, 54, 53, 0.2);
+    box-sizing:border-box;
+}
+
+.last-slider__item-wrap h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.last-slider__item-wrap p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #303032;
+}
+
+.last-slider__item-wrap span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #979798;
+    text-decoration-line: line-through;
+    margin-left: 11px;
+}
+
+.last {
+    position: relative;
+    padding-bottom: 110px;
+    margin-bottom: 110px;
+}
+
+.last-slider {
+    position: absolute;
+    top: 214px;
+}
+
+.last__button {
+    padding: 18px 68px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgb(48, 48, 50);
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 145px;
+    top: 570px;
+}
+
+.last__button:active {
+    opacity: 0.6;
+}
+
+.last__button:focus,
+.last__button:hover {
+    opacity: 0.8;
+} 
+
+.last__button::before {
+    content:"";
+    width: 209px;
+    height: 5px;
+    background-color:rgb(48, 48, 50);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 409px;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .last-slider {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 140px;
+        margin-right: 127px;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+
+    .last-slider__image img {
+        height: 252px;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    .slick-slide img {
+        display: inline-block;
+    }
+
+    .last-title {
+        position: absolute;
+        left: 70px;
+        top: 73px;
+    }
+
+    .last-menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 275px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        top: 164px;
+        left: 70px;
+    }
+
+    .last__button {
+        padding: 18px 68px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: rgb(48, 48, 50);
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        left: 63px;
+        top: 570px;
+    }
+  
+    .last-slider__item {
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 30px rgba(56, 54, 53, 0.2);
+        box-sizing:border-box;
+        width: 250px;
+        margin-right: 20px;
+        height: 355px;
+        align-items:center;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-left: -94px;
+    }
+
+    .last__button {
+        left: 45px;
+    }
+
+    .last__button::before {
+        left: 0;
+    }
+
+@media screen and (max-width: 320px) {
+    .last__button {
+      display: none;
+    }
+
+    .last__button::before {
+      display: none;
+  }
+
+    .slick-slider {
+        width: 259px;
+    }
+      
+    .slick-track {
+        width: 259px;
+    } 
+
+    .slick-slider {
+        width: 259px;
+    }
+
+    .slick-list {
+        width: 259px;
+    }
+
+    .last-slider__image {
+        width: 259px;
+    }
+
+    .last-slider__item {
+        width: 259px;
+    }
+
+    .last h2 {
+        font-size: 20px;
+    }
+
+    .last-title {
+        left: 16px;
+    }
+
+    .last-wrapper {
+        max-width: 100%;
+        background-color:  #F9FDFF;;
+    }
+
+    .last-menu__list {
+        left: 20px;
+    }
+
+    .last-menu__items a {
+        text-decoration:solid;
+    }
+
+    .last__button::before {
+        display: none;
+    }
+
+    .last-slider {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .slick-list  {
+      margin-left: 0;
+    }
+
+}

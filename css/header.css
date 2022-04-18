@@ -1,0 +1,226 @@
+/*стилизация шапки сайта*/
+
+.page-header__wrapper container {
+    font-family: Open-sans, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page-header__wrapper {
+    display: flex;
+    position: relative;
+    padding: 90px 133px 0  133px;
+  }
+
+  .page-header__wrapper::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    top: 0;
+    left: 65.5%;
+    background-color: #fceae8;
+    z-index: -1;
+  }
+
+.header__menu {
+    width: 60%;
+}
+
+.header__logo {
+    padding-top: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header__link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303032;
+    text-transform: uppercase;
+    width: 33.3%;
+    margin-right: 60px;
+    text-decoration: none;
+    letter-spacing: 0.13em;
+    cursor: pointer;
+}
+
+.header__link:focus,
+.header__link:hover {
+    opacity:0.8;
+}
+
+.header__link:active {
+    opacity: 0.6;
+}
+
+.header__list li{
+    list-style: none;
+}
+
+#burger, [for=burger] {
+    display: none;
+}
+
+.visually-hidden  {
+    position: absolute;
+    width: 1px;
+    overflow: hidden;
+  }
+
+.page-header__wrapper .page-header__user-nav {
+    margin-left: auto;
+}
+
+.page-header__user-nav {
+    width: auto;
+}
+
+.user-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
+    padding: 0;
+    list-style: none;
+    z-index: 3;
+}
+
+.user-nav__item {
+    margin-left: 22px;
+}
+  
+.user-nav__item a {
+    display: block;
+}
+  
+.user-nav__item a:focus, 
+.user-nav__item a:hover {
+    opacity: 0.8;
+}
+  
+.user-nav__item a:active {
+    opacity: 0.6;
+}
+  
+.user-nav__item--cart a,
+.user-nav__item--search a {
+    width: 24px;
+    height: 28px;
+    background-image: url("../img/icon-magnifier.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 27px;
+    background-position: center bottom;
+  }
+
+.user-nav__item--cart a {
+    width: 33px;
+    background-image: url("../img/icon-cart.svg");
+    background-size: 33px 28px;
+    background-position: center;
+}
+
+@media screen and (max-width: 1100px) { 
+    .header {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .header__menu {
+        width: 77%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-header__wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px 14px 0 16px;
+        box-sizing: border-box;
+        position: fixed;
+        background: #E5E5E5;
+        z-index: 3;
+        height: 64px;
+      }
+
+    .page-header__wrapper::before {
+        display: none;
+      }
+    
+    .header__menu {
+        width: 100%;
+    }
+
+    .header__logo  {
+        padding-top: 0;
+    }
+
+    .header__user-nav__item--search, .user-nav__item--cart {
+        margin-top: 0;
+    }
+
+    .user-nav__item--cart  {
+        margin-right: 45px;
+    }
+
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 25px;
+        text-align: center;
+        right: 16px;
+        top: 23px;
+        z-index: 5;
+    }
+    
+    [for=burger]::before {
+        content: url(../img/open-burger.svg);
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        padding-top: 50px;
+        background-color: #303032;
+        width: 320px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .header__list {
+        display: block;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    .header__list li {
+        margin-bottom: 65px;
+    }
+
+    .header__link {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    #burger:checked + label + nav {
+        display: block;
+    }
+
+    #burger:checked + [for=burger]::before {
+        content: url(../img/close.svg);
+        z-index:3;
+    }
+}

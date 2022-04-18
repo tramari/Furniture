@@ -1,0 +1,208 @@
+/*стилизация блока footer*/
+.page-footer {
+    background-color: #ffffff;
+}
+  
+.page-footer-left {
+    display: flex;
+    flex-direction: column;
+}
+  
+.page-footer__wrapper {
+    padding-left: 148px;
+    padding-right: 135px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 97px;
+}
+  
+.page-footer__logo,
+.page-footer__navigation,
+.page-footer__wrapper {
+    box-sizing: border-box;
+}
+  
+.page-footer__logo {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+}
+  
+.page-footer__contacts {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+  
+.page-footer__navigation {
+    margin-top: 2px;
+}
+  
+.page-footer__navigation-list {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.page-footer__navigation-item {
+    margin-left: 67px;
+}
+  
+.page-footer__navigation-item a:focus,
+.page-footer__navigation-item a:hover,
+.product--slider .product__button:focus,
+.product--slider .product__button:hover {
+     opacity: 0.8;
+}
+
+.page-footer__navigation-item a:active,
+.product--slider .product__button:active {
+    opacity: 0.6;
+}
+
+.page-footer__navigation-item a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #303032;
+    text-transform: uppercase;
+}
+  
+.page-footer__contacts a {
+    position: relative;
+    padding-left: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #303032;
+}
+
+.page-footer__contacts a:focus,
+.page-footer__contacts a:hover {
+    opacity: 0.8;
+}
+  
+.page-footer__contacts a:active {
+    opacity: 0.6;
+}
+  
+.page-footer__contacts a::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: -5px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+}
+  
+.page-footer__tel {
+    margin-top: 1px;
+}
+  
+.page-footer__tel::before {
+    content: "";
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+  
+.page-footer__mail {
+    margin-left: 59px;
+}
+  
+.page-footer__mail::before {
+    content: "";
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+}
+  
+.page-footer__copyright {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: right;
+    color: rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+  
+@media (max-width: 767px) {
+    .page-footer__wrapper {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 16px 0;
+    }
+    .page-footer__mail {
+        margin-left: 0;
+    }
+  
+    .page-footer__logo {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 4px;
+        padding-top: 3px;
+        padding-left: 3px;
+    }
+  
+    .page-footer__contacts {
+        flex-direction: column;
+        margin-bottom: 35px;
+        padding-left: 10px;
+    }
+  
+    .page-footer__contacts a::before {
+        top: 0;
+        left: -8px;
+    }
+  
+    .page-footer__tel {
+        margin-top: 0;
+        margin-left: 2px;
+        margin-bottom: 20px;
+    }
+  
+    .page-footer__navigation {
+        order: 2;
+        margin-bottom: 20px;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+  
+    .page-footer__navigation-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: auto;
+    }
+  
+    .page-footer__navigation-item {
+        margin-left: 0;
+        margin-top: 0;
+        width: 140px;
+        flex-shrink: 1;
+        margin-bottom: 17px;
+    }
+  
+    .page-footer__copyright {
+        order: 3;
+        text-align: center;
+    }
+}
